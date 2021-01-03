@@ -1,42 +1,26 @@
 // swiper
-
 var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 10,
+  spaceBetween: 1,
   centeredSlides: true,
-  slidesPerView: 5,
+  slidesPerView: 3,
   loop: true,
-
   autoplay: {
     delay: 2300,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    700: {
+      spaceBetween: 3,
+      slidesPerView: 5,
+    },
+  }
+
 });
+
 
 //  AOS waypoint
 AOS.init();
 
-/////////////////
-var galleryThumbs = new Swiper(".swiper-container", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  loop: true,
-  freeMode: true,
-  loopedSlides: 5, //looped slides should be the same
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-var galleryTop = new Swiper(".swiper-container", {
-  spaceBetween: 10,
-  loop: true,
-  loopedSlides: 5, //looped slides should be the same
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-});
 
 $(".filimobox_button-view").on("click", function () {
   if ($(".filimobox_inner-button_click").hasClass("back-view")) {
@@ -46,6 +30,10 @@ $(".filimobox_button-view").on("click", function () {
   } else {
     $(".filimobox_inner-button_click").toggleClass("back-view");
     $(".filimobox_inner-button_click.back-view").html("نمای پشت");
-    $(".filimobox_sliding-wrapper").css("transform", "translateX(950px)");
+    $(".filimobox_sliding-wrapper").css("transform", "translateX(40%)");
   }
 });
+
+$(".ghader").on("click",function(){
+  $(".hide").slideToggle();
+})

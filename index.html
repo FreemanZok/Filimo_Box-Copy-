@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="js/jquery.js"></script>
@@ -17,8 +14,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-
-    <!-- <script src="../package/swiper-bundle.min.js"></script> -->
 
     <title>فیلیمو باکس</title>
   </head>
@@ -31,7 +26,7 @@
         </a>
         <a href="#" class="filimobox_button header_link">
           <span>خرید فیلیمو باکس</span>
-          <span>+ اشتراک یک ساله فیلیمو</span>
+          <span class="sm-plus-acount">+ اشتراک یک ساله فیلیمو</span>
           <svg
             class="filimobox_arrow"
             version="1.1"
@@ -64,7 +59,7 @@
             با فیلیموباکس به هزاران فیلم و سریال ایرانی و خارجی در تلویزیون
             خانگی خود دسترسی خواهید داشت
           </p>
-          <a class="filimobox_button" href="#">
+          <a class="filimobox_button" href="#part-6">
             <span>مشخصات محصول</span>
             <svg
               class="filimobox_arrow"
@@ -89,7 +84,7 @@
               </g>
             </svg>
           </a>
-          <a class="filimobox_button black" href="#">
+          <a class="filimobox_button black" href="#part-2">
             <span>اطلاعات بیشتر</span>
             <svg
               class="filimobox_arrow"
@@ -117,7 +112,7 @@
         </div>
       </div>
       <!-- part-2  -->
-      <div class="filimobox_part-2">
+      <div id="part-2" class="filimobox_part-2">
         <div class="filimobox_wrapper">
           <h2 data-aos="fade-up" data-aos-duration="1000">معرفی فیلیموباکس</h2>
           <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
@@ -129,7 +124,7 @@
             نوع DDR4 و 16GB حافظه داخلی EMMC جهت بهره بردن از عملکردی سریع و با
             ثبات استفاده شده.
           </p>
-          <p class="hide">
+          <p class="hide ali">
             پس از اتصال دستگاه به تلویزیون به سادگی می توانید از هزاران فیلم و
             سریال ارائه شده توسط فیلیمو که اپلیکیشن آن بصورت پیش فرض بر روی
             دستگاه نصب شده است لذت ببرید.سیستم عامل این محصولAndroid TV 8.1 می
@@ -139,8 +134,8 @@
             Assistance و همچنین Google Play Store را برای کاربران فراهم می
             نماید.
           </p>
-          <div class="filimobox_padding-top">
-            <img src="./img/svg/plus.svg" alt="" />
+          <div>
+            <img class="ghader" src="./img/svg/plus.svg" alt="" />
           </div>
           <ul class="filimobox_items filimobox_padding-top">
             <li class="filimobox_items_svg-wrapper">
@@ -393,12 +388,7 @@
           data-aos-duration="1000"
         />
         <div class="filimobox_middle-poster-back">
-          <img
-            src="./img/tv-joker.jpg"
-            data-aos-offset="1000"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          />
+          <img src="./img/tv-joker.jpg" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"/>
         </div>
       </div>
 
@@ -409,12 +399,8 @@
           محتویات داخل جعبه و طرح راهنمای اتصال کابل ها به فیلیموباکس
         </p>
         <div class="filimobox_views clearfix">
-          <div
-            class="filimobox_right"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <ul class="filimobox_items filimobox_padding-top">
+          <div class="filimobox_right" data-aos="fade-left" data-aos-duration="1000">
+            <ul class="filimobox_items r-box  filimobox_padding-top">
               <li class="filimobox_items_svg-wrapper">
                 <svg
                   version="1.1"
@@ -1429,16 +1415,14 @@
       </div>
 
       <!-- part-6 -->
-      <div class="filimobox_part-6 clearfix">
+      <div id="part-6" class="filimobox_part-6 clearfix">
         <h2 data-aos="fade-up" data-aos-duration="1000">
           خرید فیلیموباکس FB-۱۰۱
         </h2>
         <div class="filimobox_right">
-          <img
+            <img
             class="filimobox_poster-bottom"
-            src="./img/dark-remote-box.jpg"
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            src="./img/dark-remote-box.jpg" 
           />
         </div>
         <div
@@ -1474,9 +1458,6 @@
               <div class="filimobox_left">۴۱۷ گرم</div>
             </li>
           </ul>
-          <div class="filimobox_padding-top filimobox_plus">
-            <img src="./img/svg/plus.svg" />
-          </div>
           <ul class="filimobox_more-features clearfix">
             <li>
               <img src="./img/svg/waranty.svg" alt="" />
@@ -1526,8 +1507,10 @@
       <div class="filimobox_footer">
         <img src="./img/svg//logo-filimo-footer.svg" alt="" />
       </div>
+
     </div>
 
     <script src="js/script.js"></script>
+
   </body>
 </html>
